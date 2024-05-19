@@ -80,6 +80,19 @@ flutter_launcher_icons:
   - Restart your pc and try generating the keystore file again
   - Place this file in your `android\app` folder
 
+### 4. If you ever need to reset the the keystore file of a app that was previously uploading
+  - Generate the keystore file as it is shown in the previous steps
+  - Go to your app dashboard in Google Play Console
+  - Go to App Signing on the left menu
+  - Scroll down to find the option request upload key reset
+  - Chose a reason
+  - Run this line of code to generate the .pemm file from your keystore file
+  ```bash
+  $ keytool -export -rfc -keystore upload-keystore.jks -alias upload -file upload_certificate.pem
+  ```
+  - provide the file to google and request the reset
+  - you will receive a Gmail confirming that you can upload your app with the new Keystore after a given date (2/3 business days) 
+
 ### 4. Configure Signing in gradle
   - Go to your `android\app\build.gradle` file
   - Find the android block
