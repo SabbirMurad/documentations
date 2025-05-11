@@ -1,0 +1,55 @@
+site_name: Actix Template
+site_url: https://sabbirhassan.com/documentations/actix-template
+nav:
+  - Getting Started: index.md
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+theme:
+  logo: assets/icon/logo.svg
+  favicon: assets/icon/logo.svg
+  homepage: https://sabbirhassan.com/documentations/actix-template
+  name: material
+  features:
+    - content.code.copy
+    - content.code.line_numbers
+    - content.code.annotation
+    - navigation.sections
+    - navigation.top
+    - content.tabs.link
+    - navigation.instant
+    - navigation.instant.progress
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/bitlaab
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/bitlaab
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/bitlaab
+    - icon: fontawesome/brands/github
+      link: https://github.com/bitlaab-bolt
+copyright: Copyright © 2024 Sabbir Hassan™
