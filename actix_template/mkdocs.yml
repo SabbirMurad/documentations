@@ -1,7 +1,14 @@
 site_name: Actix Template
 site_url: https://sabbirhassan.com/documentations/actix-template
 nav:
-  - Getting Started: index.md
+  - Getting Started: getting_started.md
+  - Dev TLS: dev_tls.md
+  - Assets: assets.md
+  - Components: components.md
+  - Docs: docs.md
+  - Pages: pages.md
+  - Src: src.md
+  - Env: env.md
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
