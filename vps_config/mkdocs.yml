@@ -26,7 +26,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 theme:
-  logo: assets/logo.svg
+  logo: https://sabbirhassan.com/assets/favicon/favicon.svg
   favicon: https://sabbirhassan.com/assets/favicon/favicon.svg
   homepage: https://sabbirhassan.com/documentations/vps-config
   name: material
@@ -40,16 +40,14 @@ theme:
     - navigation.instant
     - navigation.instant.progress
   palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    # Default on first load; the toggle choice is then stored in localStorage.
+    # No `media` key on purpose - adding one would make the OS preference win.
+    - scheme: default
       primary: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       toggle:
         icon: material/brightness-4

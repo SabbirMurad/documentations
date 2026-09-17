@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Sabbir Hassan">
-  <!-- Fixed colors, inline fills only. Do not reintroduce a <style> block with
-       prefers-color-scheme rules: media queries inside an SVG loaded as <img>
-       follow the OS theme and make the mark flip color. -->
-  <rect fill="#0b0b0b" x="0"  y="0"  width="54" height="54" rx="11"/>
-  <rect fill="#de4520" x="74" y="0"  width="54" height="54" rx="11"/>
-  <rect fill="#0b0b0b" x="0"  y="74" width="54" height="54" rx="11"/>
-  <rect fill="#0b0b0b" x="74" y="74" width="54" height="54" rx="11"/>
-</svg>
