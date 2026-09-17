@@ -1,6 +1,7 @@
 site_name: Vps Config
 site_url: https://sabbirhassan.com/documentations/vps-config
 nav:
+  - Home: index.md
   - Getting Started: getting_started.md
   - Install Network Time Protocol: ntp.md
   - Install Build Essentials: build_essentials.md
@@ -12,6 +13,10 @@ nav:
   - Configure Firewall: firewall.md
   - Configure Git: git.md
   - Manage SSL Certificates: certbot.md
+  - Install Rust: install_rust.md
+  - Install Redis: install_redis.md
+  - Install Mongo: install_mongo.md
+  - Setup systemd: setup_systemd.md
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -21,8 +26,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 theme:
-  logo: assets/icon/logo.svg
-  favicon: assets/icon/logo.svg
+  logo: assets/logo.svg
+  favicon: https://sabbirhassan.com/assets/favicon/favicon.svg
   homepage: https://sabbirhassan.com/documentations/vps-config
   name: material
   features:
@@ -37,7 +42,7 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: slate
+      scheme: default
       primary: custom
       toggle:
         icon: material/brightness-7
@@ -54,12 +59,12 @@ extra_css:
 extra:
   generator: false
   social:
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/bitlaab
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@itscompiletime
     - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/bitlaab
+      link: https://www.facebook.com/sabbir.murad.503
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/bitlaab
+      link: https://www.linkedin.com/in/sabbir-hassan-aa302824a/
     - icon: fontawesome/brands/github
-      link: https://github.com/bitlaab-bolt
+      link: https://github.com/sabbirmurad
 copyright: Copyright © 2024 Sabbir Hassan™
