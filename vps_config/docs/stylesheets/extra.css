@@ -81,3 +81,35 @@
 .md-logo img {
   color-scheme: dark;
 }
+
+/* ---------------------------------------------------------------------------
+   Search bar, resting (unfocused) state.
+
+   Material's default is a #00000042 wash over the header, which reads as a
+   different grey depending on what is behind it. Pinning it keeps the field at
+   a fixed #3f3f3f against the #252525 header in both palettes.
+
+   The focused state is left alone: Material swaps it to --md-default-bg-color
+   through [data-md-toggle=search]:checked ~ ..., which outranks these rules.
+   --------------------------------------------------------------------------- */
+.md-search__form {
+  background-color: #3f3f3f;
+}
+
+/* :hover is (0,2,0) so it needs its own rule - a slight lift keeps the
+   affordance. Set this to #3f3f3f too if you want the field completely flat. */
+.md-search__form:hover {
+  background-color: #4a4a4a;
+}
+
+/* ---------------------------------------------------------------------------
+   Active sidebar item.
+
+   Material only recolors the current page's link (to --md-typeset-a-color) and
+   sets no weight, so this adds the weight without disturbing the color. Scoped
+   to .md-nav--primary so it applies to the page list on the left, not the
+   table-of-contents entries on the right.
+   --------------------------------------------------------------------------- */
+.md-nav--primary .md-nav__item .md-nav__link--active {
+  font-weight: 700;
+}
